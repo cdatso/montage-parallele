@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manifesto — Montage Parallèle</title>
+<link rel="canonical" href="https://montage-parallele.cdatso.be/en/manifeste.html">
+<link rel="alternate" hreflang="fr" href="https://montage-parallele.cdatso.be/manifeste.html">
+<link rel="alternate" hreflang="en" href="https://montage-parallele.cdatso.be/en/manifeste.html">
+<link rel="alternate" hreflang="x-default" href="https://montage-parallele.cdatso.be/manifeste.html">
+<link rel="stylesheet" href="../assets/fonts.css">
+<link rel="stylesheet" href="../assets/mobilier.css">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+/* Gabarit des deux éditions : clair par défaut, sombre selon le système, bouton Light / Dark (clé kb-theme). */
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; --ink: #ece8df; --ink-soft: #cfc9bd; --ink-muted: #a29c92; --paper: #161519; --paper-alt: #1e1d22; --line: #38352f; --accent: #d9a08c; --mobilier-filet: #38352f; --mobilier-attenue: #a29c92; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark; --ink: #ece8df; --ink-soft: #cfc9bd; --ink-muted: #a29c92; --paper: #161519; --paper-alt: #1e1d22; --line: #38352f; --accent: #d9a08c; --mobilier-filet: #38352f; --mobilier-attenue: #a29c92; } }
+.theme { margin-left: 0.4rem; font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase;
+  background: transparent; color: var(--mobilier-attenue); border: 1px solid var(--line); border-radius: 3px;
+  padding: 0.2rem 0.5rem; cursor: pointer; }
+.theme:hover { color: var(--accent); border-color: var(--accent); }
+@media print { .theme { display: none; } }
+main.wrap { padding-top: 3.4rem; padding-bottom: 5rem; max-width: 44rem; }
+main.wrap h1 { font-family: var(--serif); font-weight: 600; font-size: 2.2rem; color: var(--ink); margin: 0 0 1.6rem; line-height: 1.2; }
+</style>
+<script>(function(){try{var t=localStorage.getItem("kb-theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t);}}catch(e){}})();</script>
+</head>
+<body>
+<header class="chrome">
+  <div class="chrome-in">
+    <a class="marque" href="qui-sommes-nous.html">Montage Parallèle</a>
+    <nav class="menu" aria-label="Main navigation">
+      <a href="qui-sommes-nous.html">Who we are</a>
+      <a href="manifeste.html" aria-current="page">Manifesto</a>
+      <a href="methode.html">Method</a>
+      <a href="lecons.html">Lessons</a>
+      <a href="https://www.cdatso.be/analyses-de-films/en/index.html">Analyses de films</a>
+      <a href="https://www.cdatso.be/" rel="noopener">Christo Datso ↗</a>
+    </nav>
+    <button class="theme" id="theme" type="button" aria-label="Switch between light and dark">Light / Dark</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- commun -->
+  <h1>Manifesto</h1>
+  <p>In this squad, artificial intelligence is not an artificial colleague: it is a set of specialised capabilities, put to work for a team that moves in short cycles. The aim is not to replace human judgement, but to extend what the team is able to produce, check and learn. Authority, responsibility and decisions remain human.</p>
+<!-- /commun -->
+<!-- cdatso -->
+  <p>Here, these capabilities serve personal work: reading cinema, learning, ordering one's sources.</p>
+<!-- /cdatso -->
+<!-- commun -->
+  <h2>Our principles</h2>
+  <ol>
+    <li><strong>The human remains responsible.</strong> Every decision that commits a site, its content or its readers is taken by an identified person.</li>
+    <li><strong>The AI acts under mandate.</strong> Each session receives a written role, deliverables and limits; it does not step outside them.</li>
+    <li><strong>The AI takes no initiative.</strong> What would be useful outside the mandate is proposed; it is not done.</li>
+    <li><strong>A decision is spoken.</strong> It exists only if the human has said it, with an explicit formula, in the right window.</li>
+    <li><strong>Memory lives in the registers.</strong> Whatever commits the team is written down at the moment it happens, in a versioned document.</li>
+    <li><strong>Whoever produces does not audit.</strong> Another session checks, on the evidence; it never decides in the human's place.</li>
+    <li><strong>Mistakes are kept.</strong> A register is amended by a dated erratum; it is never silently rewritten.</li>
+    <li><strong>What is published says how it was made.</strong> Each page names its sources, the tool that wrote it and the review it received.</li>
+    <li><strong>Human skills are cultivated.</strong> The team learns the risks of AI as much as its uses: whatever it hands over to a machine, it must still know how to check.</li>
+  </ol>
+  <h2>Our conviction</h2>
+  <p>The future is not an autonomous artificial colleague. It lies in the explicit orchestration of specialised capabilities, under mandate and under human responsibility, in the service of a stronger collective intelligence. How it works day to day: the <a href="methode.html">method</a>. What four months have taught us: the <a href="lecons.html">lessons</a>.</p>
+<!-- /commun -->
+
+  <p><a class="lien-retour" href="qui-sommes-nous.html">Back to the home page</a></p>
+
+</main>
+
+<footer><div class="f-in">
+  <a href="../manifeste.html" hreflang="fr" lang="fr">Français</a>
+  <br>
+  Texts written with an AI (Claude, by Anthropic) and reviewed by a human — transparency notice, AI Act, Article 50.
+  <br>
+  This site loads no external resource; no reading data is passed to any third party.
+  <br>
+  Licences: texts CC BY-NC-SA 4.0 · code EUPL 1.2 — <a href="https://www.cdatso.be/analyses-de-films/en/comment-ca-marche.html#licences">details</a>.
+</div></footer>
+
+<script>(function(){var b=document.getElementById("theme");b.addEventListener("click",function(){var r=document.documentElement;var cur=r.getAttribute("data-theme");var sys=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";var now=(cur||sys)==="dark"?"light":"dark";r.setAttribute("data-theme",now);try{localStorage.setItem("kb-theme",now);}catch(e){}});})();</script>
+</body>
+</html>

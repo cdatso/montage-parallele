@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Method — Montage Parallèle</title>
+<link rel="canonical" href="https://montage-parallele.cdatso.be/en/methode.html">
+<link rel="alternate" hreflang="fr" href="https://montage-parallele.cdatso.be/methode.html">
+<link rel="alternate" hreflang="en" href="https://montage-parallele.cdatso.be/en/methode.html">
+<link rel="alternate" hreflang="x-default" href="https://montage-parallele.cdatso.be/methode.html">
+<link rel="stylesheet" href="../assets/fonts.css">
+<link rel="stylesheet" href="../assets/mobilier.css">
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+/* Gabarit des deux éditions : clair par défaut, sombre selon le système, bouton Light / Dark (clé kb-theme). */
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; --ink: #ece8df; --ink-soft: #cfc9bd; --ink-muted: #a29c92; --paper: #161519; --paper-alt: #1e1d22; --line: #38352f; --accent: #d9a08c; --mobilier-filet: #38352f; --mobilier-attenue: #a29c92; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark; --ink: #ece8df; --ink-soft: #cfc9bd; --ink-muted: #a29c92; --paper: #161519; --paper-alt: #1e1d22; --line: #38352f; --accent: #d9a08c; --mobilier-filet: #38352f; --mobilier-attenue: #a29c92; } }
+.theme { margin-left: 0.4rem; font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase;
+  background: transparent; color: var(--mobilier-attenue); border: 1px solid var(--line); border-radius: 3px;
+  padding: 0.2rem 0.5rem; cursor: pointer; }
+.theme:hover { color: var(--accent); border-color: var(--accent); }
+@media print { .theme { display: none; } }
+main.wrap { padding-top: 3.4rem; padding-bottom: 5rem; max-width: 44rem; }
+main.wrap h1 { font-family: var(--serif); font-weight: 600; font-size: 2.2rem; color: var(--ink); margin: 0 0 1.6rem; line-height: 1.2; }
+</style>
+<script>(function(){try{var t=localStorage.getItem("kb-theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t);}}catch(e){}})();</script>
+</head>
+<body>
+<header class="chrome">
+  <div class="chrome-in">
+    <a class="marque" href="qui-sommes-nous.html">Montage Parallèle</a>
+    <nav class="menu" aria-label="Main navigation">
+      <a href="qui-sommes-nous.html">Who we are</a>
+      <a href="manifeste.html">Manifesto</a>
+      <a href="methode.html" aria-current="page">Method</a>
+      <a href="lecons.html">Lessons</a>
+      <a href="https://www.cdatso.be/analyses-de-films/en/index.html">Analyses de films</a>
+      <a href="https://www.cdatso.be/" rel="noopener">Christo Datso ↗</a>
+    </nav>
+    <button class="theme" id="theme" type="button" aria-label="Switch between light and dark">Light / Dark</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- commun -->
+  <h1>Method</h1>
+  <h2>The cycle: mandate, gates, execution, audit, record</h2>
+  <p>All work follows the same cycle. The Supervisor drafts a <strong>mandate</strong>: the object, the deliverables, what is forbidden, and the points where the session must stop. The human reads it and lodges it; the session opens by checking that the calibre actually running is the one intended. At each stop, it waits for a <strong>gate</strong>: an explicit formula, spoken by the human and addressed to the window that will carry it out — “go push … — window …”. Nothing is published without a gate. <strong>Execution</strong> proceeds in batches, each one measured before and after. Another session then <strong>audits</strong> the work on the evidence, replaying the checks. Finally, the Supervisor <strong>records</strong> it: in the version history, each decision carries a mark that shows who took it and when.</p>
+  <h2>The registers</h2>
+  <p>The squad works on versioned registers: the task tracker, the dated chronology of decisions, the inventory of risks and their safeguards, the collaboration charter, the lexicon. They are working documents: they are corrected by erratum, never rewritten. Every time that goes into them is read from the clock, never estimated.</p>
+  <h2>Rules a machine can check</h2>
+  <p>A rule that depends on a model's judgement does not survive a change of model. A rule that a script can check — a formula, a prefix, a count — holds. So every new rule must pass a test: which check would say it has been broken? And every new doctrine must answer another question: which existing arrangements does it make wrong?</p>
+<!-- /commun -->
+<!-- cdatso -->
+  <h2>An example: how a film analysis is made</h2>
+  <p>The human picks the film. The production skill searches the published criticism, writes nine sections and a numbered bibliography, then runs automatic checks that block publication at the slightest defect. Two regimes coexist: Critiques, written by the AI alone, and Studies, reworked line by line by Christo Datso. Going online waits for its gate. Alongside, a pilot chain publishes without review, on a separate test surface, marked as such on every page: it is there to measure what automation is worth, not to do without review.</p>
+<!-- /cdatso -->
+
+  <p><a class="lien-retour" href="qui-sommes-nous.html">Back to the home page</a></p>
+
+</main>
+
+<footer><div class="f-in">
+  <a href="../methode.html" hreflang="fr" lang="fr">Français</a>
+  <br>
+  Texts written with an AI (Claude, by Anthropic) and reviewed by a human — transparency notice, AI Act, Article 50.
+  <br>
+  This site loads no external resource; no reading data is passed to any third party.
+  <br>
+  Licences: texts CC BY-NC-SA 4.0 · code EUPL 1.2 — <a href="https://www.cdatso.be/analyses-de-films/en/comment-ca-marche.html#licences">details</a>.
+</div></footer>
+
+<script>(function(){var b=document.getElementById("theme");b.addEventListener("click",function(){var r=document.documentElement;var cur=r.getAttribute("data-theme");var sys=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";var now=(cur||sys)==="dark"?"light":"dark";r.setAttribute("data-theme",now);try{localStorage.setItem("kb-theme",now);}catch(e){}});})();</script>
+</body>
+</html>
