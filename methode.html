@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Méthode — Montage Parallèle</title>
+<link rel="canonical" href="https://montage-parallele.cdatso.be/methode.html">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/mobilier.css">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+/* Gabarit des deux éditions : clair par défaut, sombre selon le système, bouton Light / Dark (clé kb-theme). */
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; --ink: #ece8df; --ink-soft: #cfc9bd; --ink-muted: #a29c92; --paper: #161519; --paper-alt: #1e1d22; --line: #38352f; --accent: #d9a08c; --mobilier-filet: #38352f; --mobilier-attenue: #a29c92; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark; --ink: #ece8df; --ink-soft: #cfc9bd; --ink-muted: #a29c92; --paper: #161519; --paper-alt: #1e1d22; --line: #38352f; --accent: #d9a08c; --mobilier-filet: #38352f; --mobilier-attenue: #a29c92; } }
+.theme { margin-left: 0.4rem; font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase;
+  background: transparent; color: var(--mobilier-attenue); border: 1px solid var(--line); border-radius: 3px;
+  padding: 0.2rem 0.5rem; cursor: pointer; }
+.theme:hover { color: var(--accent); border-color: var(--accent); }
+@media print { .theme { display: none; } }
+main.wrap { padding-top: 3.4rem; padding-bottom: 5rem; max-width: 44rem; }
+main.wrap h1 { font-family: var(--serif); font-weight: 600; font-size: 2.2rem; color: var(--ink); margin: 0 0 1.6rem; line-height: 1.2; }
+</style>
+<script>(function(){try{var t=localStorage.getItem("kb-theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t);}}catch(e){}})();</script>
+</head>
+<body>
+<header class="chrome">
+  <div class="chrome-in">
+    <a class="marque" href="qui-sommes-nous.html">Montage Parallèle</a>
+    <nav class="menu" aria-label="Navigation principale">
+      <a href="qui-sommes-nous.html">Qui sommes-nous</a>
+      <a href="manifeste.html">Manifeste</a>
+      <a href="methode.html" aria-current="page">Méthode</a>
+      <a href="lecons.html">Leçons</a>
+      <a href="https://www.cdatso.be/analyses-de-films/index.html">Analyses de films</a>
+      <a href="https://www.cdatso.be/" rel="noopener">Christo Datso ↗</a>
+    </nav>
+    <button class="theme" id="theme" type="button" aria-label="Basculer entre clair et sombre">Light / Dark</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- commun -->
+  <h1>Méthode</h1>
+  <h2>Le cycle : mandat, gates, exécution, audit, consignation</h2>
+  <p>Tout travail suit le même cycle. Le Superviseur rédige un <strong>mandat</strong> : l'objet, les livrables, ce qui est interdit, et les points où la session doit s'arrêter. L'humain le relit et le dépose ; la session s'ouvre en vérifiant que le calibre qui tourne est bien celui qui est prévu. Aux arrêts, elle attend un <strong>gate</strong> : une formule explicite, prononcée par l'humain et adressée à la fenêtre qui l'exécute — « go push … — fenêtre … ». Aucune publication sans gate. L'<strong>exécution</strong> se fait par lots, chacun mesuré avant et après. Une autre session <strong>audite</strong> ensuite sur pièces, en rejouant les contrôles. Enfin, le Superviseur <strong>consigne</strong> : chaque décision porte, dans l'historique des versions, une marque qui permet de vérifier qui l'a prise et quand.</p>
+  <h2>Les registres</h2>
+  <p>La squad travaille sur des registres versionnés : le suivi des tâches, la chronologie datée des décisions, l'inventaire des risques et de leurs parades, la charte de collaboration, le lexique. Ce sont des documents de travail : ils se corrigent par erratum, ils ne se réécrivent pas. Toute heure qui y entre est lue à l'horloge, jamais estimée.</p>
+  <h2>Des règles qu'une machine peut vérifier</h2>
+  <p>Une règle qui dépend du jugement d'un modèle ne survit pas au changement de modèle. Une règle que l'on peut vérifier par un script — une formule, un préfixe, un compte — tient. Chaque règle nouvelle passe donc un test : quel contrôle dirait qu'elle est violée ? Et chaque doctrine nouvelle, une autre question : quels rangements existants deviennent faux ?</p>
+<!-- /commun -->
+<!-- cdatso -->
+  <h2>Un exemple : la chaîne d'une analyse de film</h2>
+  <p>L'humain choisit le film. La skill de production cherche la critique publiée, rédige neuf sections et une bibliographie numérotée, puis passe des contrôles automatiques qui bloquent la publication au moindre défaut. Deux régimes coexistent : les Critiques, écrites par l'IA seule, et les Études, reprises ligne à ligne par Christo Datso. La mise en ligne attend son gate. À côté, une chaîne pilote publie sans relecture, sur une surface d'essai séparée, marquée comme telle sur chaque page : elle sert à mesurer ce que l'automatisation vaut, pas à se passer de la relecture.</p>
+<!-- /cdatso -->
+
+  <p><a class="lien-retour" href="qui-sommes-nous.html">Retour à l'accueil</a></p>
+
+</main>
+
+<footer><div class="f-in">
+  Textes rédigés avec une IA (Claude, d'Anthropic) et relus par un humain — mention de transparence, AI Act, article 50.
+  <br>
+  Aucune ressource externe n'est chargée par ce site ; aucune donnée de lecture n'est transmise à un tiers.
+  <br>
+  Licences : textes CC BY-NC-SA 4.0 · code EUPL 1.2 — <a href="https://www.cdatso.be/analyses-de-films/comment-ca-marche.html#licences">détails</a>.
+</div></footer>
+
+<script>(function(){var b=document.getElementById("theme");b.addEventListener("click",function(){var r=document.documentElement;var cur=r.getAttribute("data-theme");var sys=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";var now=(cur||sys)==="dark"?"light":"dark";r.setAttribute("data-theme",now);try{localStorage.setItem("kb-theme",now);}catch(e){}});})();</script>
+</body>
+</html>

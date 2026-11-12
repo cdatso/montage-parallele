@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qui sommes-nous — Montage Parallèle</title>
+<link rel="canonical" href="https://montage-parallele.cdatso.be/qui-sommes-nous.html">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/mobilier.css">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+/* Gabarit des deux éditions : clair par défaut, sombre selon le système, bouton Light / Dark (clé kb-theme). */
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; --ink: #ece8df; --ink-soft: #cfc9bd; --ink-muted: #a29c92; --paper: #161519; --paper-alt: #1e1d22; --line: #38352f; --accent: #d9a08c; --mobilier-filet: #38352f; --mobilier-attenue: #a29c92; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark; --ink: #ece8df; --ink-soft: #cfc9bd; --ink-muted: #a29c92; --paper: #161519; --paper-alt: #1e1d22; --line: #38352f; --accent: #d9a08c; --mobilier-filet: #38352f; --mobilier-attenue: #a29c92; } }
+.theme { margin-left: 0.4rem; font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase;
+  background: transparent; color: var(--mobilier-attenue); border: 1px solid var(--line); border-radius: 3px;
+  padding: 0.2rem 0.5rem; cursor: pointer; }
+.theme:hover { color: var(--accent); border-color: var(--accent); }
+@media print { .theme { display: none; } }
+main.wrap { padding-top: 3.4rem; padding-bottom: 5rem; max-width: 44rem; }
+main.wrap h1 { font-family: var(--serif); font-weight: 600; font-size: 2.2rem; color: var(--ink); margin: 0 0 1.6rem; line-height: 1.2; }
+.logo-squad { text-align: center; margin: 0 0 0.7rem; }
+.logo-squad svg { width: 200px; max-width: 100%; height: auto; }
+.logo-squad .strip { stroke: var(--ink); } .logo-squad .word { fill: var(--ink); } .logo-squad .tag { fill: var(--ink-muted); }
+.logo-squad .perf, .logo-squad .flow { fill: #b28d3f; }
+.logo-squad-legende { font-family: var(--sans); font-size: 0.78rem; color: var(--ink-muted); text-align: center; margin: 0 0 2.2rem; }
+</style>
+<script>(function(){try{var t=localStorage.getItem("kb-theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t);}}catch(e){}})();</script>
+</head>
+<body>
+<header class="chrome">
+  <div class="chrome-in">
+    <a class="marque" href="qui-sommes-nous.html">Montage Parallèle</a>
+    <nav class="menu" aria-label="Navigation principale">
+      <a href="qui-sommes-nous.html" aria-current="page">Qui sommes-nous</a>
+      <a href="manifeste.html">Manifeste</a>
+      <a href="methode.html">Méthode</a>
+      <a href="lecons.html">Leçons</a>
+      <a href="https://www.cdatso.be/analyses-de-films/index.html">Analyses de films</a>
+      <a href="https://www.cdatso.be/" rel="noopener">Christo Datso ↗</a>
+    </nav>
+    <button class="theme" id="theme" type="button" aria-label="Basculer entre clair et sombre">Light / Dark</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- commun -->
+  <h1>Qui sommes-nous</h1>
+  <div class="logo-squad">
+    <svg xmlns="http://www.w3.org/2000/svg" width="680" height="300" viewBox="0 0 680 300" role="img">
+      <title>Logo Squad Montage Parallèle</title>
+      <desc>Deux bobines de film côte à côte reliées par des amorces de coupe dorées — des actions parallèles, un seul récit.</desc>
+      <circle cx="262" cy="120" r="70" fill="none" class="strip" stroke-width="20"/>
+      <circle cx="418" cy="120" r="70" fill="none" class="strip" stroke-width="20"/>
+      <g transform="rotate(0 262 120)"><rect x="259" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(30 262 120)"><rect x="259" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(60 262 120)"><rect x="259" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(90 262 120)"><rect x="259" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(150 262 120)"><rect x="259" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(180 262 120)"><rect x="259" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(210 262 120)"><rect x="259" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(240 262 120)"><rect x="259" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(270 262 120)"><rect x="259" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(330 262 120)"><rect x="259" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(0 418 120)"><rect x="415" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(30 418 120)"><rect x="415" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(90 418 120)"><rect x="415" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(120 418 120)"><rect x="415" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(150 418 120)"><rect x="415" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(180 418 120)"><rect x="415" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(210 418 120)"><rect x="415" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(270 418 120)"><rect x="415" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(300 418 120)"><rect x="415" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <g transform="rotate(330 418 120)"><rect x="415" y="47" width="6" height="6" rx="1" class="perf"/></g>
+      <rect x="330" y="110" width="20" height="4" rx="1" class="flow"/>
+      <rect x="330" y="126" width="20" height="4" rx="1" class="flow"/>
+      <path d="M186 105 L174 120 L186 135 Z" class="flow"/>
+      <path d="M494 135 L506 120 L494 105 Z" class="flow"/>
+      <text x="340" y="243" text-anchor="middle" class="word" style="font-family:ui-sans-serif,system-ui,sans-serif;font-size:25px;font-weight:500;letter-spacing:0.12em;">Squad Montage Parallèle</text>
+      <text x="340" y="270" text-anchor="middle" class="tag" style="font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;letter-spacing:0.08em;">des actions parallèles · un seul récit — conception · dev · test · prod</text>
+    </svg>
+  </div>
+  <p class="logo-squad-legende">Deux bobines de film reliées par des amorces de coupe : des actions parallèles, un seul récit.</p>
+  <p>« Montage Parallèle » est une squad : plusieurs lignes de travail menées de front, un seul récit à l'arrivée. Elle réunit un humain, Christo Datso, et Claude, l'assistant d'Anthropic, employé en plusieurs calibres — Fable, Opus, Sonnet, Haiku — choisis selon la tâche, comme on choisit une focale.</p>
+  <h2>Un humain qui décide, des IA sous mandat</h2>
+  <p>Christo Datso est le seul décideur. Il arbitre, relit et accomplit lui-même les gestes sensibles : publier, supprimer, toucher à un nom de domaine. Aucune IA ne décide à sa place, et aucune ne travaille sans un mandat écrit. Là où un texte est signé, la signature dit quel calibre l'a produit et quelle relecture il a reçue : elle nomme l'instrument, comme un générique nomme l'équipe.</p>
+  <h2>Les rôles, en novembre 2026</h2>
+  <p>Le programme a démarré le 9 juillet 2026. Quatre mois plus tard, huit sortes de sessions sont permises, et aucune autre :</p>
+  <ul>
+    <li>le <strong>Superviseur</strong>, qui tient les registres, rédige les mandats et audite les autres sessions ;</li>
+    <li>le <strong>Chercheur</strong>, qui instruit une question et cadre un chantier ; plusieurs peuvent travailler en parallèle, chacun sur un objectif ;</li>
+    <li>les <strong>sessions mandatées</strong>, ouvertes par un mandat, refermées par un bilan ;</li>
+    <li>la <strong>skill de production</strong>, une méthode écrite que l'humain invoque ;</li>
+    <li>les <strong>routines planifiées</strong> et la <strong>chaîne pilote</strong>, qui tournent sans personne devant l'écran ;</li>
+    <li>la <strong>session de développement</strong> et la <strong>session serveur</strong>, tenues à l'écart de la production.</li>
+  </ul>
+  <h2>Ce qui est commun aux deux sites</h2>
+  <p>Trois lignes portent l'ensemble : le <strong>Programme (PRG)</strong> — la méthode, les règles, les registres ; l'<strong>Exploitation (RUN)</strong> — l'outillage et la maintenance du poste ; les <strong>Services (SRV)</strong> — les sites et services en ligne.</p>
+  <p><strong>Conférences (CNF)</strong> : des conférences et des ateliers sur l'intelligence artificielle, pour des publics qui ne sont pas techniciens. La squad prépare les supports ; la parole reste à Christo Datso.</p>
+<!-- /commun -->
+<!-- cdatso -->
+  <h2>Ce qu'on produit ici</h2>
+  <p>Sur cdatso.be, la squad tient les lignes personnelles :</p>
+  <ul>
+    <li><strong>Analyses de films (CIN)</strong> : des synthèses de la critique existante, chaque affirmation renvoyant à sa source. Ces IA n'ont pas vu les films ; elles cartographient ce qui a été écrit, sans prétendre remplacer un regard.</li>
+    <li><strong>Formation (FOR)</strong> : l'apprentissage du code, où Christo Datso est l'élève et le décideur.</li>
+    <li><strong>Librairie (LIB)</strong> : une base de données qui indexe l'ensemble de ses sources documentaires.</li>
+    <li><strong>Mémoire (MEM)</strong> : une ligne personnelle, tenue à part ; rien n'en est publié.</li>
+  </ul>
+<!-- /cdatso -->
+
+  <p><a class="lien-retour" href="qui-sommes-nous.html">Retour à l'accueil</a></p>
+
+</main>
+
+<footer><div class="f-in">
+  Textes rédigés avec une IA (Claude, d'Anthropic) et relus par un humain — mention de transparence, AI Act, article 50.
+  <br>
+  Aucune ressource externe n'est chargée par ce site ; aucune donnée de lecture n'est transmise à un tiers.
+  <br>
+  Licences : textes CC BY-NC-SA 4.0 · code EUPL 1.2 — <a href="https://www.cdatso.be/analyses-de-films/comment-ca-marche.html#licences">détails</a>.
+</div></footer>
+
+<script>(function(){var b=document.getElementById("theme");b.addEventListener("click",function(){var r=document.documentElement;var cur=r.getAttribute("data-theme");var sys=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";var now=(cur||sys)==="dark"?"light":"dark";r.setAttribute("data-theme",now);try{localStorage.setItem("kb-theme",now);}catch(e){}});})();</script>
+</body>
+</html>
